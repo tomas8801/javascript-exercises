@@ -20,10 +20,12 @@
 		<nav class="menu">
 			<!-- a[href="#seccion$"]{Sección $}*5 -->
 			<a href="#seccion1">Reloj digital y alarma sonora</a>
-			<a href="#seccion2">Sección 2</a>
-			<a href="#seccion3">Sección 3</a>
-			<a href="#seccion4">Sección 4</a>
-			<a href="#seccion5">Sección 5</a>
+			<a href="#seccion2">Eventos de teclado</a>
+			<a href="#seccion3">Cuenta Regresiva</a>
+			<a href="#seccion4">Responsive con Javascript</a>
+			<a href="#seccion5">Deteccion de dispositivo</a>
+			<a href="#seccion6">Sección 5</a>
+
 		</nav>
 	</aside>
 
@@ -31,27 +33,45 @@
 		<!-- section#seccion$.section*5>h2{Sección $} -->
 		<section id="seccion1" class="section">
 			<h2>Reloj digital y alarma sonora</h2>
-			<div class="reloj">
-				<button class="iniciar-reloj">Iniciar reloj</button>
-				<button class="detener-reloj">Detener reloj</button>
-				<button class="iniciar-alarma">Iniciar alarma</button>
-				<button class="detener-alarma">Detener alarma</button>
-			</div>
+			<div class="reloj" id="reloj"></div>
+
+			<button class="iniciar-reloj" id="iniciar-reloj">Iniciar reloj</button>
+			<button class="detener-reloj" id="detener-reloj">Detener reloj</button>
+			<button class="iniciar-alarma" id="iniciar-alarma">Iniciar alarma</button>
+			<button class="detener-alarma" id="detener-alarma">Detener alarma</button>
+			
 		</section>
 		<section id="seccion2" class="section">
-			<h2>Sección 2</h2>
+			<h2>Evento de teclado</h2>
+			<div class="stage">
+				<div class="ball"></div>
+			</div>
 		</section>
 		<section id="seccion3" class="section">
-			<h2>Sección 3</h2>
+			<h2>Cuenta regresiva</h2>
+			<div id="countdown"></div>
 		</section>
 		<section id="seccion4" class="section">
-			<h2>Sección 4</h2>
+			<h2>Responsive con JavaScript</h2>
+			<div id="youtube"></div>
+			<div id="gmaps"></div>
 		</section>
 		<section id="seccion5" class="section">
+			<h2>Deteccion de dispositivos</h2>
+			<div id="user-device"></div>
+		</section>
+		<section id="seccion6" class="section">
+			<h2>Sección 5</h2>
+		</section>
+		<section id="seccion7" class="section">
+			<h2>Sección 5</h2>
+		</section>
+		<section id="seccion8" class="section">
 			<h2>Sección 5</h2>
 		</section>
 	</main>
 	
+	<button class="scroll-top-btn hidden">&#11014;</button>
 	
 
 	<script src="js/index_dom.js" type="module"></script>
